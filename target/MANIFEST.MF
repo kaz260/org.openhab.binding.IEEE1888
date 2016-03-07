@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bundle-Description: This is the IEEE1888 binding of the open Home Auto
+ mation Bus (openHAB)
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-SymbolicName: org.openhab.binding.IEEE1888
+Require-Bundle: org.apache.axis2.osgi
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,JavaSE-1.7
+Bundle-Vendor: openHAB.org
+Bundle-DocURL: http://www.openhab.org
+Import-Package: javax.servlet;version="2.6.0",javax.servlet.http;versi
+ on="2.6.0",org.apache.axiom.om,org.apache.axiom.om.impl.builder,org.a
+ pache.axiom.soap,org.apache.commons.codec;version="1.4.0",org.apache.
+ commons.lang,org.apache.commons.lang3,org.apache.commons.lang3.time,o
+ rg.openhab.core.binding,org.openhab.core.events,org.openhab.core.item
+ s,org.openhab.core.library.items,org.openhab.core.library.types,org.o
+ penhab.core.types,org.openhab.model.item.binding,org.osgi.framework,o
+ rg.osgi.service.cm;version="1.4.0",org.osgi.service.component,org.osg
+ i.service.event,org.slf4j
+Service-Component: OSGI-INF/binding.xml, OSGI-INF/genericbindingprovid
+ er.xml
+Export-Package: org.openhab.binding.IEEE1888
+Bundle-Name: openHAB IEEE1888 Binding
+Bundle-Version: 1.8.0.201603070226
+Bundle-ClassPath: .
+Private-Package: org.openhab.binding.IEEE1888.internal
+Ignore-Package: org.openhab.binding.IEEE1888.internal
+

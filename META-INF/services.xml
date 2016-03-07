@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST) -->
+<serviceGroup>
+    <service name="FIAPServer">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="org.fiap.server.FIAPServerMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">org.openhab.binding.IEEE1888.server.FIAPServer</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <!-- <parameter name="wsdl4jDefinition">FIAPServer.wsdl</parameter> -->
+        <operation name="query" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://soap.fiap.org/">
+            <actionMapping>http://soap.fiap.org/query</actionMapping>
+            <outputActionMapping>http://soap.fiap.org/FIAPServiceSoap/queryResponse</outputActionMapping>
+        </operation>
+        <operation name="data" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://soap.fiap.org/">
+            <actionMapping>http://soap.fiap.org/data</actionMapping>
+            <outputActionMapping>http://soap.fiap.org/FIAPServiceSoap/dataResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>
